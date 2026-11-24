@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #fff0f5;
+    min-height: 100vh;
+    padding: 50px 20px;
+}
+
+.container {
+    background: white;
+    max-width: 750px;
+    margin: auto;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+header h1 {
+    color: #d85b91;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #888;
+}
+
+#task-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 35px;
+}
+
+input, select {
+    padding: 13px;
+    border: 1px solid #f0d5e1;
+    border-radius: 10px;
+    font-size: 14px;
+    outline: none;
+}
+
+#task-input {
+    flex: 1 1 100%;
+}
+
+select, input[type="date"] {
+    flex: 1;
+    min-width: 130px;
+}
+
+button {
+    background: #d85b91;
+    color: white;
+    border: none;
+    padding: 13px 22px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background: #c4487e;
+}
+
+.task-section h2 {
+    color: #444;
+    margin-bottom: 20px;
+    font-size: 21px;
+}
+
+#task-list {
+    list-style: none;
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 25px 18px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    #task-form button {
+        width: 100%;
+    }
+}
+/* Task List */
+
+#task-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Individual Task Card */
+
+#task-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    background: #fff7fa;
+    border: 1px solid #f5dce7;
+    padding: 18px 20px;
+    border-radius: 12px;
+    transition: 0.2s ease;
+}
+
+#task-list li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Task Details */
+
+#task-list li span {
+    font-size: 16px;
+    font-weight: 600;
+    color: #444;
+    flex: 1;
+}
+
+/* Priority and Date */
+
+#task-list li small {
+    color: #888;
+    font-size: 13px;
+}
+
+/* Delete Button */
+
+#task-list li button {
+    background: #ffe1e9;
+    color: #c4487e;
+    padding: 9px 15px;
+    border-radius: 8px;
+}
+
+#task-list li button:hover {
+    background: #f8c5d5;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 500px) {
+    #task-list li {
+        flex-wrap: wrap;
+    }
+
+    #task-list li button {
+        width: 100%;
+    }
+}
+
+.priority-badge {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px !important;
+    font-weight: 600;
+    flex: 0 0 auto !important;
+}
+
+.priority-badge.high {
+    background: #ffe1e1;
+    color: #d64545 !important;
+}
+
+.priority-badge.medium {
+    background: #fff0d6;
+    color: #c78320 !important;
+}
+
+.priority-badge.low {
+    background: #dcf5e5;
+    color: #32965a !important;
+}
