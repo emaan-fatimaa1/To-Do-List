@@ -43,3 +43,19 @@ A web-based task management application built with Python and Flask, deployed on
 ## Project Preview
 
 ![To-Do List Application](screenshots/todo-app.png)
+
+## Project Structure
+
+```text
+To-Do-List/
+├── app.py
+├── tasks.db
+├── static/
+│   ├── script.js
+│   └── style.css
+├── templates/
+│   └── index.html
+├── screenshots/
+│   └── todo-app.png
+├── .gitignore
+└── README.md
