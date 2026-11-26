@@ -29,8 +29,10 @@ A web-based task management application built with Python and Flask, deployed on
 
 ## Live Application
 
-[View Live Application](ADD_YOUR_HTTPS_LINK_HERE)
+[View Live Application](https://to-doo-list.duckdns.org/)
 
 ## Screenshots
 
-Project screenshots will be added soon.
+## Project Preview
+
+![To-Do List Application](screenshots/todo-app.png)
