@@ -1,5 +1,12 @@
 # To-Do List Application
 
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Flask](https://img.shields.io/badge/Flask-Framework-black)
+![AWS](https://img.shields.io/badge/AWS-Cloud-orange)
+![Linux](https://img.shields.io/badge/Linux-Ubuntu-yellow)
+![Nginx](https://img.shields.io/badge/Nginx-Web_Server-green)
+
+
 A web-based task management application built with Python and Flask, deployed on AWS. The application allows users to organize daily tasks, set priorities, and manage deadlines.
 
 ## Features
